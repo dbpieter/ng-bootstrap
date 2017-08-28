@@ -264,7 +264,7 @@ gulp.task(
 
 gulp.task(
     'build:demo', ['clean:demo', 'generate-docs', 'generate-plunks'],
-    shell.task(['webpack --config webpack.demo.js --progress --profile --bail'], {env: {MODE: 'build'}}));
+    shell.task(['webpack --config webpack.demo.js --progress --profile --bail']));
 
 gulp.task(
     'demo-server:aot', ['generate-docs', 'generate-plunks'],
